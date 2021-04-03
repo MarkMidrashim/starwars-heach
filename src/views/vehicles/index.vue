@@ -55,7 +55,7 @@ import Pagination from "@/components/Pagination"; // secondary package based on 
 import i18n from "@/lang";
 
 export default {
-	name: "People",
+	name: "Vehicles",
 	components: { Pagination },
 	directives: { waves },
 	filters: {

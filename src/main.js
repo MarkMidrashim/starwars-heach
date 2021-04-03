@@ -11,6 +11,7 @@ import App from '@/App'
 import store from '@/store'
 import router from '@/router'
 import i18n from '@/lang' // internationalization
+import '@/assets/icons' // icon
 
 import VueSweetalert2 from 'vue-sweetalert2'
 import './registerServiceWorker'

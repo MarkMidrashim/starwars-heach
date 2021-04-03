@@ -39,7 +39,7 @@ export const constantRoutes = [
 			path: 'Home',
 			component: () => import('@/views/home/index'),
 			name: 'Home',
-			meta: { title: 'Home', icon: 'fal fa-analytics', affix: true }
+			meta: { title: 'home.title', icon: 'fal fa-analytics', affix: true }
 		}]
 	}
 ]
@@ -49,44 +49,66 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
-    /*{
-        path: '/audit/contestacao',
-        menuitem: 'audit',
-        component: Layout,
-        children: [{
-            path: '/audit/contestacao',
-            component: () => import('@/views/audit/contestacao'),
-            name: 'Contestação',
-            meta: {
-				title: 'defaults.menu.audit.contestation',
-				icon: 'fal fa-sack-dollar',
-				roles: ['analyst', 'admin']
-			}
-        }]
-    },
     {
-        path: '/management/agendaParticulares',
-        menuitem: 'management',
+        path: '/characters',
         component: Layout,
         children: [{
-            path: '/management/agendaParticulares',
-            component: () => import('@/views/management/agendaParticulares'),
-            name: 'Agenda Particulares',
-            meta: { title: 'defaults.menu.management.privateAgenda', icon: 'fal fa-clipboard-list' }
+            path: '/characters',
+            component: () => import('@/views/characters/'),
+            name: 'Personagens',
+            meta: { title: 'characters.title', icon: 'fal fa-user' }
         }]
     },
 	{
-		path: '/profile',
-		component: Layout,
-		redirect: '/profile/index',
-		menuitem: 'user',
-		children: [{
-			path: 'index',
-			component: () => import('@/views/profile/index'),
-			name: 'Profile',
-			meta: { title: 'defaults.menu.profile', icon: 'fas fa-user-circle', noCache: true }
-		}]
-	},*/
+        path: '/films',
+        component: Layout,
+        children: [{
+            path: '/films',
+            component: () => import('@/views/films/'),
+            name: 'Personagens',
+            meta: { title: 'films.title', icon: 'fal fa-user' }
+        }]
+    },
+	{
+        path: '/species',
+        component: Layout,
+        children: [{
+            path: '/species',
+            component: () => import('@/views/species/'),
+            name: 'Personagens',
+            meta: { title: 'species.title', icon: 'fal fa-user' }
+        }]
+    },
+	{
+        path: '/starships',
+        component: Layout,
+        children: [{
+            path: '/starships',
+            component: () => import('@/views/starships/'),
+            name: 'Personagens',
+            meta: { title: 'starships.title', icon: 'fal fa-user' }
+        }]
+    },
+	{
+        path: '/vehicles',
+        component: Layout,
+        children: [{
+            path: '/vehicles',
+            component: () => import('@/views/vehicles/'),
+            name: 'Personagens',
+            meta: { title: 'vehicles.title', icon: 'fal fa-user' }
+        }]
+    },
+	{
+        path: '/planets',
+        component: Layout,
+        children: [{
+            path: '/planets',
+            component: () => import('@/views/planets/'),
+            name: 'Personagens',
+            meta: { title: 'planets.title', icon: 'fal fa-user' }
+        }]
+    },
 
 	{ path: '*', redirect: '/404', hidden: true }
 ]

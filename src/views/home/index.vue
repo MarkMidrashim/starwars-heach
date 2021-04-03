@@ -5,8 +5,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="smartphone" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.movel.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.movel.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.characters.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.characters.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -14,8 +14,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="fixedphone" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.fixa.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.fixa.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.films.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.films.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -23,8 +23,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="download" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.dados.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.dados.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.species.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.species.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -35,8 +35,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="smartphone" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.movel.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.movel.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.starships.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.starships.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -44,8 +44,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="fixedphone" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.fixa.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.fixa.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.vehicles.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.vehicles.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -53,8 +53,8 @@
                 <div class="component-item">
                     <svg-icon icon-class="download" class-name="image-report" />
                     <div class="report-title">
-                        <h5 class="card-category">{{ $t('inventory.inventario.dados.title') }}</h5>
-                        <h2 class="card-title">{{ $t('inventory.inventario.dados.subtitle') }}</h2>
+                        <h5 class="card-category">{{ $t('home.planets.subtitle') }}</h5>
+                        <h2 class="card-title">{{ $t('home.planets.title') }}</h2>
                     </div>
                 </div>
             </el-card>
@@ -133,15 +133,12 @@ export default {
 		},
 		handleRedirect(index) {
             switch (index) {
-                case 0: this.$router.push('/inventory/movel/'); break;
-                case 1: this.$router.push('/inventory/fixa/'); break;
-                case 2: this.$router.push('/inventory/dados/'); break;
-                case 3: this.$router.push('/inventory/employee/'); break;
-                case 4: this.$router.push('/inventory/costCenter/'); break;
-                case 5: this.$router.push('/inventory/equipamento/aparelho/'); break;
-                case 6: this.$router.push('/inventory/allocation/'); break;
-                case 7: this.$router.push('/inventory/upload/'); break;
-                case 8: this.$router.push('/inventory/equipamento/modelos/'); break;
+                case 0: this.$router.push('/characters/'); break;
+                case 1: this.$router.push('/films/'); break;
+                case 2: this.$router.push('/species/'); break;
+                case 3: this.$router.push('/starships/'); break;
+                case 4: this.$router.push('/vehicles/'); break;
+                case 5: this.$router.push('/planets/'); break;
             }
         },
 	}
