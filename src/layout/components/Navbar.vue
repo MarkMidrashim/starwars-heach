@@ -1,6 +1,5 @@
 <template>
   <div class="navbar">
-    <hamburger id="hamburger-container" :is-active="false" class="hamburger-container"  />
     <breadcrumb style="margin-left: 20px;" id="breadcrumb-container" class="breadcrumb-container" />
 
     <div class="right-menu">
@@ -13,11 +12,9 @@
 <script>
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
-import Hamburger from '@/components/Hamburger'
 export default {
   components: {
-    Breadcrumb,
-    Hamburger,
+    Breadcrumb
   },
   computed: {
     ...mapGetters([

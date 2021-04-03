@@ -5,14 +5,12 @@ import store from '@/store'
 // create an axios instance
 const service = axios.create({
 	baseURL: process.env.VUE_APP_BASE_API,
-	timeout: 100000
+	timeout: 10000
 })
 
 // request interceptor
 service.interceptors.request.use(
 	async config => {
-		// config.headers['Authorization'] = getToken()
-
 		return config
 	},
 	error => {

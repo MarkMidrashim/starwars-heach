@@ -1,8 +1,15 @@
 import request from '@/utils/request'
 
-export function getPeople(id, params) {
+export function getPeoples() {
 	return request({
-		url: `/tem/contracts/categoria/${id}`,
+		url: `api/people/`,
+		method: 'GET'
+	})
+}
+
+export function getPeopleById(id, params) {
+	return request({
+		url: `api/people/${id}`,
 		method: 'GET',
 		params: params
 	})
