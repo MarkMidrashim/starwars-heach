@@ -1,0 +1,21 @@
+.el-dialog {
+	margin-top: 11vh !important;
+
+	.el-dialog__header {
+		background-color: $ittelco-dark-blue !important;
+		padding: 10px !important;
+
+		& button, button .el-dialog__close {
+			margin-top: -5px !important;
+		}
+
+		& .el-dialog__title {
+			padding-left: 10px !important;
+		}
+
+		& .el-dialog__title,
+		& button .el-dialog__close {
+			color: $white !important;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/**
+ * Blink for Webkit and others
+ * (Chrome, Safari, Firefox, IE, ...)
+ */
+ @-webkit-keyframes blinker {
+	from { opacity: 1.0; }
+	to { opacity: 0.0; }
+}
+
+
+.blink {
+    margin-left: 3px;
+    padding-bottom: -3px !important;
+	float: right;
+	//padding-top: 3px;
+	font-size: 11px;
+  	color: #08EFC1;
+	text-decoration: blink;
+
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+}

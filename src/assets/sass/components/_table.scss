@@ -1,0 +1,101 @@
+/* RULES */
+
+// Estilo das tabelas.
+@media screen and (max-width: $max-sm) {
+	table {
+		width: 100%;
+	}
+
+	tbody {
+		td {
+			display: block;
+			text-align: center;
+
+			 &:before {
+				content: attr(data-th);
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+
+	thead {
+		display: none;
+	}
+
+	tr {
+		&:nth-of-type(2n) {
+			background-color: inherit;
+		}
+
+		td:first-child {
+			background-color: #F0F0F0;
+	   		font-size: 1.3em;
+	   		font-weight: bold;
+   		}
+	}
+}
+
+.order-header {
+	cursor: pointer;
+}
+
+/**
+ * @Override
+ */
+$--table-current-row-background-color: $ittelco-dark-gray !important;
+
+.el-table {
+	position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: #FFFFFF;
+    font-size: 14px;
+	color: #606266;
+
+	& .el-table__header-wrapper {
+		& table.el-table__header {
+			width: auto !important;
+		}
+	}
+
+	& .el-table__body-wrapper {
+		& table.el-table__body, div.el-table__empty-block {
+			width: auto !important;
+		}
+	}
+}
+
+.el-table__body-wrapper {
+	overflow-x: hidden !important;
+	position: normal !important;
+}
+
+.el-table__header {
+	thead {
+		background: $ittelco-dark-gray !important;
+		color: rgb(39, 39, 51) !important;
+	}
+}
+
+.el-table__body {
+	& tr.el-table__row {
+		max-height: 30px !important;
+		height: 10px !important;
+	}
+
+	& tr.el-table__row--striped {
+		td {
+			background: #f2f2f2 !important;
+		}
+
+		&.current-row td {
+			background-color: $--table-current-row-background-color;
+		}
+	}
+}
