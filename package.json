@@ -11,13 +11,18 @@
 		"core-js": "^3.6.5",
 		"element-theme": "^2.0.1",
 		"element-ui": "^2.15.1",
+		"fuse.js": "^6.4.6",
 		"js-cookie": "^2.2.1",
+		"node-sass": "^5.0.0",
+		"normalize.css": "^8.0.1",
 		"register-service-worker": "^1.7.2",
 		"sass": "^1.32.8",
 		"sass-loader": "^10.1.1",
 		"vue": "^2.6.11",
+		"vue-i18n": "^8.24.2",
 		"vue-router": "^3.5.1",
-		"vue-sweetalert2": "^4.2.1"
+		"vue-sweetalert2": "^4.2.1",
+		"vuex": "^3.6.2"
 	},
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "~4.5.0",

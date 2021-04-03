@@ -4,7 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 /* Layout */
-// import Layout from '@/layout'
+import Layout from '@/layout'
 
 /**
  * constantRoutes
@@ -12,7 +12,7 @@ Vue.use(Router)
  * all roles can be accessed
  */
 export const constantRoutes = [
-	/*{
+	{
 		path: '/redirect',
 		component: Layout,
 		hidden: true,
@@ -20,7 +20,7 @@ export const constantRoutes = [
 			path: '/redirect/:path*',
 			component: () => import('@/views/redirect/index')
 		}]
-	},*/
+	},
 	{
 		path: '/404',
 		component: () => import('@/views/error-page/404'),
@@ -31,18 +31,17 @@ export const constantRoutes = [
 		component: () => import('@/views/error-page/401'),
 		hidden: true
 	},
-	/*{
+	{
 		path: '',
 		component: Layout,
-		redirect: 'dashboard',
-		menuitem: 'dashboard',
+		redirect: 'home',
 		children: [{
-			path: 'Dashboard',
-			component: () => import('@/views/dashboard/index'),
-			name: 'Dashboard',
-			meta: { title: 'defaults.menu.dashboard', icon: 'fal fa-analytics', affix: true }
+			path: 'Home',
+			component: () => import('@/views/home/index'),
+			name: 'Home',
+			meta: { title: 'Home', icon: 'fal fa-analytics', affix: true }
 		}]
-	}*/
+	}
 ]
 
 /**
