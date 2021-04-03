@@ -1,10 +1,25 @@
 import Vue from 'vue'
+import Cookies from 'js-cookie'
 
 import Element from 'element-ui'
-import './assets/sass/element-variables.scss'
+import '@/assets/sass/element-variables.scss'
+import '@/assets/sass/index.scss' // global css
 
 import App from './App'
 import router from './router'
+
+import VueSweetalert2 from 'vue-sweetalert2'
+import './registerServiceWorker'
+
+/**
+ * Uses
+ */
+Vue.use(VueSweetalert2)
+
+Vue.use(Element, {
+	size: Cookies.get('size') || 'medium', // set element-ui default size
+	// i18n: (key, value) => i18n.t(key, value)
+})
 
 /**
  * Config

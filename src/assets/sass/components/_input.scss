@@ -17,17 +17,17 @@ input {
 	caret-color: #000;
 
 	&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		color: $ittelco-dark-gray-2 !important;
+		color: $dark-gray !important;
 		opacity: 0.5; /* Firefox */
   	}
 
   	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		color: $ittelco-dark-gray-2;
+		color: $dark-gray;
 	  	opacity: 0.5; /* Firefox */
   	}
 
 	&:-webkit-autofill {
-	  	box-shadow: 0 0 0px 1000px $ittelco-dark-gray-2 inset !important;
+	  	box-shadow: 0 0 0px 1000px $dark-gray inset !important;
 	  	-webkit-text-fill-color: $bg !important;
 	}
 }

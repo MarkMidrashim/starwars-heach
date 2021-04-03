@@ -43,7 +43,7 @@
 /**
  * @Override
  */
-$--table-current-row-background-color: $ittelco-dark-gray !important;
+$--table-current-row-background-color: $dark-gray !important;
 
 .el-table {
 	position: relative;
@@ -78,7 +78,7 @@ $--table-current-row-background-color: $ittelco-dark-gray !important;
 
 .el-table__header {
 	thead {
-		background: $ittelco-dark-gray !important;
+		background: $dark-gray !important;
 		color: rgb(39, 39, 51) !important;
 	}
 }

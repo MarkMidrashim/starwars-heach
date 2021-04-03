@@ -8,9 +8,9 @@
             All rights reserved
             <a
               style="color: #20a0ff"
-              href="http://ittelco.com.br/"
+              href="#"
               target="_blank"
-              >Ittelco Quality Solutions</a
+              >Anonymous</a
             >
           </div>
           <div class="bullshit__headline">{{ message }}</div>
@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import errGif from "@/assets/401_images/401.gif";
+import errGif from "@/assets/img/error-page/401.gif";
 export default {
   name: "Page401",
   data() {

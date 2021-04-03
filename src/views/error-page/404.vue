@@ -29,9 +29,9 @@
           All rights reserved
           <a
             style="color: #20a0ff"
-            href="http://ittelco.com.br/"
+            href="#"
             target="_blank"
-            >Ittelco Quality Solutions</a
+            >Anonymous</a
           >
         </div>
         <div class="bullshit__headline">{{ message }}</div>
